@@ -1,0 +1,11 @@
+主要内容：
+通用的高性能编程原则
+编写测试和基准测试程序
+Unix命令time
+python模块timeit
+使用pytest进行测试和基准测试
+剖析应用程序
+标准工具cProfile
+使用KCachegrind
+工具line-profiler和memory_profiler
+使用模块dis对python代码进行反汇编
