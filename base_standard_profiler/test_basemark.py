@@ -28,3 +28,12 @@ def benchmark():
 if __name__ == "__main__":
 #     test_evolve()    
     benchmark()
+'''
+计算基准测试程序的运行时间，使用unix命令time，可轻松测量任何进程的执行时间
+time有三个指标：
+real：从头到尾运行进程实际花费的时间，与人用秒表测量的时间相当
+user：从计算期间，所有cpu所花费的时间
+sys：在执行与系统相关的任务（如内存分配）期间。所有cpu花费的时间
+在有些情况下，user+sys>real,这是因为可能有多个处理器在并行的工作
+user适合监控cpu的性能
+'''   
