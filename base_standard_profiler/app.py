@@ -8,7 +8,14 @@ Jiangxi University of Finance and Economics
 from matplotlib import pyplot as plt
 from matplotlib import animation
 from matplotlib.figure import figaspect
+
 class particle:
+    __slots__=('x','y','ang_vel')
+    '''
+    在CPython中，当一个A类定义了__slots__ = ('x', 'y')，
+    A.x就是一个有__get__和__set__方法的member_descriptor，
+    并且在每个实例中可以通过直接访问内存（direct memory access）获得。
+    '''
     def __init__(self,x,y,ang_vel):
         self.x=x
         self.y=y
