@@ -1,3 +1,10 @@
 eclipse.preferences.version=1
+encoding//base_standard_profiler/__init__.py=utf-8
 encoding//base_standard_profiler/app.py=utf-8
+encoding//base_standard_profiler/cprofile_basemark2.py=utf-8
+encoding//base_standard_profiler/cprofile_basemark3.py=utf-8
+encoding//base_standard_profiler/cprofile_basemark4.py=utf-8
+encoding//base_standard_profiler/dis_model.py=utf-8
+encoding//base_standard_profiler/taylor.py=utf-8
+encoding//base_standard_profiler/test_basemark.py=utf-8
 encoding/<project>=UTF-8
