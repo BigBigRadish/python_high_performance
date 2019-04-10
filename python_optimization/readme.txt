@@ -76,3 +76,11 @@ counter=Counter(items)
 五.字典树
 字典树也被称为前缀树，在列表中查找与前缀匹配的字符串方面，字典树速度很快。非常适合来实现输入时查找和补全功能。实时响应
 python标准库并没有提供字典树的实现，但PyPI可找到高效的实现，使用的实现是patricia-trie
+详见 trie_demo.py
+六.缓存和memoization
+智能缓存技术，预先缓存，空间换取时间
+python标准库提供了functools，可直接使用基于内存的缓存
+通过使用装饰器functools.lru_cache,可轻松缓存函数的结果
+详见lru_cache_demo.py
+七.joblib
+joblib是一个简单的库，提供了基于磁盘的简单的缓存。这个包的用法与lru_cache类似，但结果存储在磁盘，不会随应用程序消失而消失
