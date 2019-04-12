@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 '''
 Created on 2019年4月10日
 Zhukun Luo
 Jiangxi University of Finance and Economics
 '''
-from functools import lru_cache
+from functools import lru_cache#仅适合python3
 @lru_cache()
 def sum2(a,b):
     print('Calculating {} +{}'.format(a, b))

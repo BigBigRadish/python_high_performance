@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Created on 2019年4月10日
 Zhukun Luo
@@ -10,3 +11,4 @@ memory=Memory(cachedir='./')
 def sum2(a,b):
     return a+b
 # 能够对操作numpy数组的函数进行高效的memoization
+sum2(1, 2)

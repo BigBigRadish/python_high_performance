@@ -8,4 +8,6 @@ encoding//base_standard_profiler/dis_model.py=utf-8
 encoding//base_standard_profiler/taylor.py=utf-8
 encoding//base_standard_profiler/test_basemark.py=utf-8
 encoding//python_optimization/heapq_demo.py=utf-8
+encoding//python_optimization/joblib_memory_demo.py=utf-8
+encoding//python_optimization/lru_cache_demo.py=utf-8
 encoding/<project>=UTF-8
