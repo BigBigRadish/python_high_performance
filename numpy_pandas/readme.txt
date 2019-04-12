@@ -1,0 +1,16 @@
+使用Numpy和Pandas快速执行数组操作
+numpy是python科学计算的标准，它让python支持较多灵活的多维数组操作。
+在内部，多维数组numpy.ndarray是基于c语言数组的。除了能够提高性能，还让numpy代码能偶与c和fortaran互操作，构建了一个桥梁。
+numpy广播功能，以简明的方式重写复杂的数学表达式
+Pandas是一个严重依赖Numpy的工具，使用Pandas的数据结构和向量化操作实现高性能
+主要内容：
+一.创建和操作Numpy数组
+二.掌握Numpy的广播功能以快速而简明地执行向量化操作
+三.使用numpy改进前面的离子案例
+四.使用numexpr最大限度优化性能
+五.Pandas基础知识
+六.使用pandas执行数据库式操作
+一.创建和操作Numpy数组
+numpy数组是由一系列数据类型相同的元素组成的集合，这种基本限制让numpy能以特定的方式封装数据，从而实现高性能操作。
+详见create_malp_numpyDemo.py
+
