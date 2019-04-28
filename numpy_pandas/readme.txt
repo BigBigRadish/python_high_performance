@@ -13,4 +13,6 @@ Pandas是一个严重依赖Numpy的工具，使用Pandas的数据结构和向量
 一.创建和操作Numpy数组
 numpy数组是由一系列数据类型相同的元素组成的集合，这种基本限制让numpy能以特定的方式封装数据，从而实现高性能操作。
 详见create_malp_numpyDemo.py
-
+二.广播机制和计算
+numpy的真正威力在于其快速的数学运算。numpy使用经过优化的c语言代码来执行基于元素的计算，从而避免python解释器。广播是一组巧妙的规则，能够快速执行数组运算
+见guangbo.py 和calcu.py
