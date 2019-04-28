@@ -18,3 +18,5 @@ numpy的真正威力在于其快速的数学运算。numpy使用经过优化的c
 见guangbo.py 和calcu.py
 三.使用numpy重写我们的应用
 见app.py
+四.使用numexpr最大限度优化性能
+见numexpr_demo.py
