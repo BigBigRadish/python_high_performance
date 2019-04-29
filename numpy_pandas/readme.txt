@@ -20,3 +20,5 @@ numpy的真正威力在于其快速的数学运算。numpy使用经过优化的c
 见app.py
 四.使用numexpr最大限度优化性能
 见numexpr_demo.py
+五.pandas常用操作
+处理大型同质输入时，numpy和pandas很好用，但当表达式非常复杂，无法使用这些库提供的工具来操作时，就不适用。这种情况下，可利用Cpython包与c语言交互
