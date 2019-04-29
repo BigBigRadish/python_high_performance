@@ -19,3 +19,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import hello
 >>> hello.hello()
 hello world!
+生成了一个xx.so的c语言拓展模块
+distutils是标准的python打包工具，使用它编译cython程序更简单。通过编写一个setup.py脚本，就可将.pyx文件直接编译成拓展模块。
+如setup.py所示,使用命令 python setup.py build_ext --inplace
+
