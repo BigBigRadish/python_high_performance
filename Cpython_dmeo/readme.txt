@@ -40,7 +40,29 @@ Cpython拓展了语言，它支持显示的类型声明，因此能够通过编�
 c数组和numpy数组与内置对象bytes,bytearray和array.array相似，因为它们都在连续的内存区域（内存缓冲区）。Cython提供一个通用接口-类型化内存视图，
 该接口统一并简化了对所有上述数据类型的访问。
 内存视图是一个对象，维护着一个指向特定内存区域的引用。该内存区域并不归内存视图所有，但内存视图能够读取和修改其内容。换而言之，内存视图是一个有关底层数据的视图。
-详见memory_view.pyx
+详见memory_view.pyx。
+Cython提供一种注释视图的功能，让我们能够获悉哪些代码行在python解释器执行，以及哪些代码存在优化空间，命令行如下：
+cython -a xxx.pyx
+firefox xxx.html
+每行源代码都可能带有深度不同的黄色背景。背景色预审，表明代码与解释器调用的相关程度越高。而背景色为白色的代码将被转换为常规c语言代码。
+最后一行为模板代码，所以很深。
+cython可禁用检查，如除0，从而删除这些与解释器相关的调用，通过编译器指令实现。添加编译器指令的三种方式:
+使用装饰器或上下文管理器
+在文件开头使用注释
+使用cython命令行
+@cython.boundscheck(False)
+def func()
+也可以像下面
+with cython.boundscheck(False):
+	#代码块
+在文件开头添加注释:
+#cython:boundscheck=False
+使用命令行：
+cython -X boundscheck=True
+
+再次执行编译命令：
+python setup.py build_ext --inplace
+#另外前面所介绍的cprofile也可提供一些代码检查功能。
 
 
 
