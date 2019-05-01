@@ -22,4 +22,8 @@ hello world!
 生成了一个xx.so的c语言拓展模块
 distutils是标准的python打包工具，使用它编译cython程序更简单。通过编写一个setup.py脚本，就可将.pyx文件直接编译成拓展模块。
 如setup.py所示,使用命令 python setup.py build_ext --inplace
+2.添加静态类型
+在python中，在程序执行期间，变量可关联到不同类型的对象。这种语言很灵活，但也会给解释器带来较大的负担，因为解释器必须在运行阶段确定变量的类型及其包含的方法，这让很多优化难以进行。
+Cpython拓展了语言，它支持显示的类型声明，因此能够通过编译生成高效的c语言拓展。
+在Cython中，声明数据类型的主要方式是使用cdef语句。如声明变量，函数，拓展类型，见cdef_static.py
 
