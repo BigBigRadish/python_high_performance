@@ -1,4 +1,14 @@
 eclipse.preferences.version=1
+encoding//Cpython_dmeo/Cython_list.pyx=utf-8
+encoding//Cpython_dmeo/__init__.py=utf-8
+encoding//Cpython_dmeo/cdef_static.pyx=utf-8
+encoding//Cpython_dmeo/cevolve.pyx=utf-8
+encoding//Cpython_dmeo/cy_numpy.pyx=utf-8
+encoding//Cpython_dmeo/distance.pyx=utf-8
+encoding//Cpython_dmeo/mathlib.pxd=utf-8
+encoding//Cpython_dmeo/mathlib.pyx=utf-8
+encoding//Cpython_dmeo/memory_view.pyx=utf-8
+encoding//Cpython_dmeo/setup.py=utf-8
 encoding//base_standard_profiler/__init__.py=utf-8
 encoding//base_standard_profiler/app.py=utf-8
 encoding//base_standard_profiler/cprofile_basemark2.py=utf-8
