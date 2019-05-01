@@ -35,3 +35,4 @@ cdef int max_py(int a,int b):
 #下面这种都能使用
 cpdef int max_py(int a,int b):
     return a if a>b else b
+#
