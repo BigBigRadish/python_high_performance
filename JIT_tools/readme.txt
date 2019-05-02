@@ -36,3 +36,9 @@ numba不支持对泛型python对象进行优化，这种限制对数值计算代
 详见jit_custom_class.py
 numba的局限性：
 在某些情况下，numba无法正确的推断除变量的类型，进而拒绝编译，使用numba最好变量明确初始化。
+五.PyPy项目
+pypy旨在改进python解释器的性能，通过在运行阶段自动编译速度缓慢的代码。pypy使用Rpyhton编写(Restricted python),只实现了python语言中开发编译器的那一部分
+策略：跟踪式JIT编译(tracing JIT compilation).在numba中，编译单元为方法和函数，而PyPy只专注于速度缓慢的循环。numba优化数值计算代码，PyPy致力于取代Cpython解释器
+六.其他有趣的项目
+Nuitka是Kay Hayen开发的一个程序，它将python代码编译成c代码，这些代码在性能上比Cpython高些，专注于与pyhton兼容
+Pyston是Dropbox开发的一款解释器，用于支持JIT编译器，类似于numba。
