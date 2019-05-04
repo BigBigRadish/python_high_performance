@@ -1,4 +1,13 @@
 eclipse.preferences.version=1
+encoding//Concurrent/__init__.py=utf-8
+encoding//Concurrent/async_future.py=utf-8
+encoding//Concurrent/asyncio_demo.py=utf-8
+encoding//Concurrent/callback.py=utf-8
+encoding//Concurrent/event_circle.py=utf-8
+encoding//Concurrent/gen_demo.py=utf-8
+encoding//Concurrent/network_request.py=utf-8
+encoding//Concurrent/rx_demo.py=utf-8
+encoding//Concurrent/threadpool_dmeo.py=utf-8
 encoding//Cpython_dmeo/Cython_list.pyx=utf-8
 encoding//Cpython_dmeo/__init__.py=utf-8
 encoding//Cpython_dmeo/cdef_static.pyx=utf-8
