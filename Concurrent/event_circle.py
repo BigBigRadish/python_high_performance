@@ -27,7 +27,7 @@ class Timer1:
     def on_timer_done(self,callback):
         self.callback=callback
 timer1=Timer1(1.0)
-timer1.on_timer_done(lambda : print ('first timer is done'))
+timer1.on_timer_done(lambda :print ('first timer is done'))
 while True:
     if timer1.done():
         timer1.callback()
