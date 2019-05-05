@@ -37,4 +37,12 @@ GPU可极大地提高单位时间内可执行的操作数(吞吐量)，需要更
 i表示整型，d不是double，f表示float).要修改这种变量的内容，可使用属性value。具体如mul_var.py
 四.通过Cython和openMP使用多线程进行并行编程
 Cython通过OpenMP提供了一个便利的接口，能够实现共享内存式并行处理。OpenMP是一个规范兼API,设计用于编写多线程并行程序。OpenMP规范包括一系列C语言预处理器指令，用于管理线程以及提供通信模式，负载均衡和其他同步功能。
-Cython并行示例见Cython_parallel.py
+Cython并行示例见Cython_parallel.pyx
+五.使用theano和tensorflow自动实现并行性
+并行自动化
+常规pyhton程序因GIL无法实现线程并行化。所以使用进程避开这种问题，但是启动慢。
+使用cython代码可以提高速度，轻量级并行，多了一个额外的编译步骤。使用特殊库将代码自动转换为并行版本，从而高效执行。
+实现并行自动化的包包括JIT编译器numexpr和Numba。
+Theano定义张量，并编译成快速语言。很多操作都可以并行化，并可在CPU和GPU中运行。
+Tensorflow是一个类似于Theano的库，在高效的C++引擎中执行操作。
+Theano代码示例如theano_dmeo.py
