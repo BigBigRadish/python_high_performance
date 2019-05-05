@@ -35,3 +35,6 @@ GPU可极大地提高单位时间内可执行的操作数(吞吐量)，需要更
 (2.同步和锁)
 虽然multiprocessing使用的是进程(这些进程有自己的内存区域),但它也允许将变量和数组定义为共享内存。要定义共享变量，可使用multiprocessing.Value,并传入一个表示变量数据类型的字符串(
 i表示整型，d不是double，f表示float).要修改这种变量的内容，可使用属性value。具体如mul_var.py
+四.通过Cython和openMP使用多线程进行并行编程
+Cython通过OpenMP提供了一个便利的接口，能够实现共享内存式并行处理。OpenMP是一个规范兼API,设计用于编写多线程并行程序。OpenMP规范包括一系列C语言预处理器指令，用于管理线程以及提供通信模式，负载均衡和其他同步功能。
+Cython并行示例见Cython_parallel.py
