@@ -32,3 +32,6 @@ GPU可极大地提高单位时间内可执行的操作数(吞吐量)，需要更
 如pro_pool_execu.py所示
 使用monte carlo 计算pi的近似值
 如monte_carlo.py
+(2.同步和锁)
+虽然multiprocessing使用的是进程(这些进程有自己的内存区域),但它也允许将变量和数组定义为共享内存。要定义共享变量，可使用multiprocessing.Value,并传入一个表示变量数据类型的字符串(
+i表示整型，d不是double，f表示float).要修改这种变量的内容，可使用属性value。具体如mul_var.py
