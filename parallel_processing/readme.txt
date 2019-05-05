@@ -27,3 +27,8 @@ GPU可极大地提高单位时间内可执行的操作数(吞吐量)，需要更
 (1.使用多个进程）
 标准模块multiprocessing可用来生成多个进程，以快速并行化简单任务，同时避免GIL问题。
 如mt_pro.py所示
+三.使用接口ProcessPoolExecutor
+从python3.2开始，可使用模块concurrent.futures中的接口Executor来并行执行python代码。ProcessPoolExecutor类的用法。
+如pro_pool_execu.py所示
+使用monte carlo 计算pi的近似值
+如monte_carlo.py
