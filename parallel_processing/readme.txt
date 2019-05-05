@@ -23,3 +23,7 @@ cuda(COMPUTE UNIFIED DEVICE ARCHITECTURE),是NVIDIA专用技术。CUDA提供工�
 OPENCL是一种开放技术，使用它编写的并行程序可针对各种目标平台进行编译，对非nvida设备来说，这是个好平台。
 gpu编程两大挑战：1.将数据写入内存以及从内存读取数据的成本2.实现算法以充分发挥GPU体系结构的作用。
 GPU可极大地提高单位时间内可执行的操作数(吞吐量)，需要更多时间准备数据。cpu生成单个结果更快。
+二.使用pyhton库multiprocessing并行处理简单问题
+(1.使用多个进程）
+标准模块multiprocessing可用来生成多个进程，以快速并行化简单任务，同时避免GIL问题。
+如mt_pro.py所示
