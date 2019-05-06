@@ -50,3 +50,4 @@ Theano能够自动并行化代码-使用openMP和BLAS线性代数例程等专用
 如test_theano.py
 theano是将函数编译成c语言代码，再编译成机器码
 六.使用Theano，Tensorflow和numba在GPU中执行代码
+如theano_gpu_demo.py和tensorflow_gpu_demo.py所示
