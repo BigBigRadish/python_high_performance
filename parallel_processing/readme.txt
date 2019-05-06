@@ -46,3 +46,7 @@ Cython并行示例见Cython_parallel.pyx
 Theano定义张量，并编译成快速语言。很多操作都可以并行化，并可在CPU和GPU中运行。
 Tensorflow是一个类似于Theano的库，在高效的C++引擎中执行操作。
 Theano代码示例如theano_dmeo.py
+Theano能够自动并行化代码-使用openMP和BLAS线性代数例程等专用包实现基于元素的操作和矩阵操作。可使用配置选项
+如test_theano.py
+theano是将函数编译成c语言代码，再编译成机器码
+六.使用Theano，Tensorflow和numba在GPU中执行代码
